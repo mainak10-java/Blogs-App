@@ -4,7 +4,7 @@ import { AppContext } from "../context/AppContext";
 const PageHandler= () =>{
     const {page, totalPages,changePageHandler} = useContext(AppContext)
     return (
-        <div className="fixed bottom-0 flex bg-white w-full justify-center border shadow-md">
+        <div className="fixed bottom-0 flex bg-white w-full justify-center border shadow-md ">
             <div className="flex justify-between w-11/12 max-w-[670px] py-2">
                 <div className="flex gap-x-2">
                     { page > 1 && 
@@ -24,7 +24,7 @@ const PageHandler= () =>{
                             ) 
                     }
                 </div>
-                <p>
+                <p className="font-bold">
                     Page {page} of {totalPages}
                 </p>
             </div>
